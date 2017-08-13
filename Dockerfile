@@ -8,7 +8,7 @@ RUN apt-get update && apt-get upgrade -y
 RUN apt-get install -y python-pip libpython-dev python-dev
 
 # Update pip
-pip install --upgrade pip
+RUN pip install --upgrade pip
 
 # Install awscli
 RUN pip install awscli
