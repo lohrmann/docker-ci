@@ -12,3 +12,6 @@ RUN pip install --upgrade pip
 
 # Install awscli
 RUN pip install awscli
+
+# Install sass processor
+RUN gem install sass --no-user-install
