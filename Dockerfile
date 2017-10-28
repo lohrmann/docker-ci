@@ -14,6 +14,6 @@ RUN pip install --upgrade pip
 RUN pip install awscli
 
 # Install gulp
-RUN npm install -g gulp-cli \
+RUN npm install -g gulp \
 	; mkdir -p /var/cache/npm && chmod 777 /var/cache/npm \
 	; npm config set cache /var/cache/npm
