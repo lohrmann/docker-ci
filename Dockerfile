@@ -5,7 +5,7 @@ FROM ubuntu:16.04
 RUN apt-get update && apt-get upgrade -y
 
 # Install awscli dependencies & git
-RUN apt-get install -y python-pip libpython-dev python-dev git ruby-full
+RUN apt-get install -y python-pip libpython-dev python-dev git build-essential nodejs
 
 # Update pip
 RUN pip install --upgrade pip
@@ -13,5 +13,5 @@ RUN pip install --upgrade pip
 # Install awscli
 RUN pip install awscli
 
-# Install sass processor
-RUN gem install sass --no-user-install
+# Install gulp
+RUN /usr/bin/npm install -g gulp
