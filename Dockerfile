@@ -14,4 +14,4 @@ RUN pip install --upgrade pip
 RUN pip install awscli
 
 # Install gulp
-RUN cd /usr/bin && npm install && install -g gulp
+RUN npm install -g gulp
